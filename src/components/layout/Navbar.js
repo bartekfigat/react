@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
 
-const Navigation = () => {
-  return (
-    <div>
+class NavBar extends Component {
+  render() {
+    return (
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
@@ -11,16 +11,16 @@ const Navigation = () => {
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
-          <NavItem eventKey={1} href="#">
-            Link
+          <NavItem eventKey={1} href="/TeamPage">
+            TeamPage
           </NavItem>
           <NavItem eventKey={2} href="#">
             Link
           </NavItem>
         </Nav>
-      </Navbar>;
-    </div>
-  );
-};
+      </Navbar>
+    );
+  }
+}
 
-export default Navigation;
+export default NavBar;
