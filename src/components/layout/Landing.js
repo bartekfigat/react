@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Jumbotron, Carousel } from "react-bootstrap";
 import Desktop from "../../img/desktop.jpg";
+import People from "../../img/photo-15.jpg";
 import "../../styleCss/Landing.css";
 
 class LandingImaeg extends Component {
@@ -19,7 +20,7 @@ class LandingImaeg extends Component {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="image" alt="900x500" src={Desktop} />
+              <img className="image" alt="900x500" src={People} />
               <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
